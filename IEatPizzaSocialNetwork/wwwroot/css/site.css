@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    margin: 0;
+}
+
+footer {
+    background-color: #101315;
+    color: #fff;
+}
+
+.form .form-control{
+    border: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    height: 58px !important;
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 13px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn.btn-white.btn-outline-white {
+    border-color: rgba(255, 255, 255, 0.8);
+    background: none;
+    border-width: 1px;
+    color: #fff;
+}
+
+.btn.btn-white.btn-outline-white:hover {
+    background-color: #fac564;
+    color: black;
+}
+
+.btn.btn-outline-dark,
+.pagination .active {
+    background-color: #fac564;
+    color: black !important;
+}
+
+.btn.btn-outline-dark:hover,
+.fas.fa-pizza-slice:hover,
+.fas.fa-search:hover,
+.fa.fa-refresh,
+.pagination .page-link{
+    border-color: rgba(255, 255, 255, 0.8);
+    background: none !important;
+    border-width: 1px;
+    color: #fff !important;
+}
+
+.fas.fa-pizza-slice,
+.fas.fa-search,
+.fa.fa-refresh:hover{
+    color: #fac564  !important;
+}
+
+.page-item.active .page-link {
+    border: none !important;
+    color: black !important;
+}

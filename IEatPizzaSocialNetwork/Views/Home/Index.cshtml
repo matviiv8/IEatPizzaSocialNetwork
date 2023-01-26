@@ -1,0 +1,55 @@
+﻿@model IEatPizzaSocialNetwork.Domain.Core.Entities.User;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="display: flex; justify-content: space-around">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5"  style="margin-top: 2%; width:300px; height:350px;" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="~/images/pizza1.png" class="d-block" width="300" height="300" alt="Pizza"/>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                 <img src="~/images/pizza2.png" class="d-block" width="300" height="300" alt="Pizza"/>
+            </div>
+            <div class="carousel-item">
+                 <img src="~/images/pizza3.png" class="d-block" width="300" height="300" alt="Pizza"/>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div> 
+    <div class="mt-5 float-right">
+        <div class="row">
+            <form class="form" asp-controller="Home" asp-action="CreateUser" method="post">
+              <div class="form-group text-center">
+                <input asp-for = "Email" type="email" class="form-control" placeholder="Enter email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <small id="emailHelp" class="form-text text-muted" style="color: #fff;">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group text-center">
+                <input asp-for="Name" type="text" minlength="2" maxlength="36" class="form-control" placeholder="Enter name">
+                 <span asp-validation-for="Name" class="text-danger"></span>
+              </div>
+              </br>
+              <i class='fas fa-pizza-slice'></i>
+              <button type="submit" class="btn btn-outline-dark">I eat pizza</button>
+            </form>
+        </div>
+        </div> 
+</div>
+

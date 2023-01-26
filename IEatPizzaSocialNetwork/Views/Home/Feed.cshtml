@@ -1,0 +1,45 @@
+﻿@model IEatPizzaSocialNetwork.WebUI.Models.ShowAllFeedsViewModel;
+
+@addTagHelper *, IEatPizzaSocialNetwork.WebUI
+
+ @{
+     ViewData["Title"] = "Feed";
+ }
+
+<div class="container mt-5">
+    <form class="form" asp-action="Feed" method="get" class="pb-3" role="search">
+                <div class="input-group">
+                  <input class="form-control" type="text" name="Search" value="@ViewData["Search"]" placeholder="Find by Name" />
+                  <div class="input-group-append">
+                     <i class="fas fa-search"></i>
+                        <button type="submit" class="btn btn-outline-dark">Search</button>
+                    <i class="fa fa-refresh"></i>
+                        <a class="btn btn-white btn-outline-white" type="reset"
+                           asp-controller="Home"
+                           asp-action="Feed">Reset</a>
+                  </div>
+                </div>
+    </form>
+</div>
+
+<div class="mt-5">
+    <table class="table table-striped table-dark text-center">
+        <tbody>
+        @foreach(var feed in Model.AllFeeds)
+        {
+            <tr>
+                <td>@feed.LastDateAndTimeSentForm @feed.Name ate pizza @feed.CountSentForm times already</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+@if(Model.AllFeeds.Count() > Model.AllFeeds.Count() / Model.PagingInfo.TotalPages)
+{
+    <page-link paging-info="Model.PagingInfo" page-action="Feed"></page-link>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
