@@ -10,7 +10,7 @@ A worldwide social network that unites pizza lovers. The site consists of two pa
 
     When the button is pressed, the data is sent to the server and stored in the database, the user gets to the feed page
 
-    2) A channel is a list of form submitters with names and submission dates, as well as the total number of form submissions for each user (counted by email). An example of a record:
+2) A channel is a list of form submitters with names and submission dates, as well as the total number of form submissions for each user (counted by email). An example of a record:
 
     "22.10 11.11.2021 Vasyl already ate pizza twice"
 
