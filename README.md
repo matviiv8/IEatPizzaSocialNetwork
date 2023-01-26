@@ -12,7 +12,7 @@ A worldwide social network that unites pizza lovers. The site consists of two pa
 
 2) A channel is a list of form submitters with names and submission dates, as well as the total number of form submissions for each user (counted by email). An example of a record:
 
-    "22.10 11.11.2021 Vasyl already ate pizza 2"
+    "22.10 11.11.2021 Vasyl ate pizza 2 times already"
 
 Pages must be linked to each other.
 
