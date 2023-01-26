@@ -19,3 +19,13 @@ Pages must be linked to each other.
 For implementation, use http://www.asp.net/mvc To access the database, you can use any convenient tool, including Entity framework, as well as any convenient database
 
 The source code must be placed in an open repository at https://github.com/
+
+### Result screenshots:
+#### Home page:
+![home](https://user-images.githubusercontent.com/73823120/214953334-02c94603-ed1c-4848-a278-98281e52a4a6.png)
+
+#### Feed page:
+![feed](https://user-images.githubusercontent.com/73823120/214953422-b035e345-e38e-4f8a-b4ea-61f066630871.png)
+
+#### Swagger:
+![swagger](https://user-images.githubusercontent.com/73823120/214953505-7c5365f5-5c77-4f28-bce3-d9060a3057a2.png)
